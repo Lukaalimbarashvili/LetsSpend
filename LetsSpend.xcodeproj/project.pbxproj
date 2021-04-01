@@ -17,6 +17,10 @@
 		F02D46EA261677F5009961D4 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02D46E9261677F5009961D4 /* OnBoarding.storyboard */; };
 		F02D46ED26167827009961D4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D46EC26167827009961D4 /* OnBoardingViewController.swift */; };
 		F02D46F02616793F009961D4 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D46EF2616793F009961D4 /* Slides.swift */; };
+		F02D46F426167F25009961D4 /* Amazon.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46F326167F25009961D4 /* Amazon.json */; };
+		F02D46F726167F2B009961D4 /* GetKnown.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46F626167F2B009961D4 /* GetKnown.json */; };
+		F02D46FA26167F35009961D4 /* Rich.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46F926167F35009961D4 /* Rich.json */; };
+		F02D46FD26167F3F009961D4 /* Spend.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46FC26167F3F009961D4 /* Spend.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		F02D46E9261677F5009961D4 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		F02D46EC26167827009961D4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		F02D46EF2616793F009961D4 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
+		F02D46F326167F25009961D4 /* Amazon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Amazon.json; sourceTree = "<group>"; };
+		F02D46F626167F2B009961D4 /* GetKnown.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetKnown.json; sourceTree = "<group>"; };
+		F02D46F926167F35009961D4 /* Rich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rich.json; sourceTree = "<group>"; };
+		F02D46FC26167F3F009961D4 /* Spend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spend.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +105,7 @@
 		B533014E2616666D0012A565 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
+				F02D46F226167F13009961D4 /* Assets */,
 				B533013F261664440012A565 /* Assets.xcassets */,
 			);
 			path = Recources;
@@ -141,6 +150,17 @@
 			children = (
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		F02D46F226167F13009961D4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F02D46F326167F25009961D4 /* Amazon.json */,
+				F02D46F626167F2B009961D4 /* GetKnown.json */,
+				F02D46F926167F35009961D4 /* Rich.json */,
+				F02D46FC26167F3F009961D4 /* Spend.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +220,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02D46F726167F2B009961D4 /* GetKnown.json in Resources */,
+				F02D46F426167F25009961D4 /* Amazon.json in Resources */,
 				B5330143261664440012A565 /* LaunchScreen.storyboard in Resources */,
+				F02D46FA26167F35009961D4 /* Rich.json in Resources */,
+				F02D46FD26167F3F009961D4 /* Spend.json in Resources */,
 				B5330140261664440012A565 /* Assets.xcassets in Resources */,
 				B533013E261664440012A565 /* Main.storyboard in Resources */,
 				F02D46EA261677F5009961D4 /* OnBoarding.storyboard in Resources */,
