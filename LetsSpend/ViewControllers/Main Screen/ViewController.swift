@@ -27,6 +27,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "itemCell",for: indexPath) as! ItemCell
 //        cell.configure(movie: UIImage(named: "car")!)
 //        cell.price.text = "300 000$"
+        
         return cell
     }
     
