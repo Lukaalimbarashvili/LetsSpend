@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Lottie
+
 
 class OnBoardingViewController: UIViewController {
     
@@ -21,9 +23,10 @@ class OnBoardingViewController: UIViewController {
     
     
     private func SetupCollectionView(){
+        
         let Layout = UICollectionViewFlowLayout()
         Layout.scrollDirection = .vertical
-        CollectionView.contentInsetAdjustmentBehavior = .never // whiteSpace აშორებს ზევით
+        CollectionView.contentInsetAdjustmentBehavior = .never
         CollectionView.collectionViewLayout = Layout
         CollectionView.isPagingEnabled = true
         CollectionView.showsVerticalScrollIndicator = false
@@ -102,15 +105,35 @@ extension OnBoardingViewController: UICollectionViewDelegate, UICollectionViewDa
 
 class OnBoardingControllerViewCell: UICollectionViewCell{
     
+    @IBOutlet weak var animationView: AnimationView!
+    @IBOutlet weak var pageTitle: UILabel!
+    @IBOutlet weak var nextButton: UIButton!
     
     
     var actionButtonDidTap: (() -> Void)?
     
     func Configure(with slide: Slide){
         
+        pageTitle.text = slide.title
+        
+        nextButton.backgroundColor = slide.buttonColor
+        nextButton.setTitle(slide.buttonTitle, for: .normal)
+        
+        let animation = Animation.named(slide.animationName)
+        
+        animationView.animation = animation
+        
+        animationView.loopMode = .loop
+        
+        if !animationView.isAnimationPlaying{
+            animationView.play()
+        }
+        
     }
     
-    
+    @IBAction func actionButtonTapped(){
+        actionButtonDidTap?()
+    }
     
     
 }
