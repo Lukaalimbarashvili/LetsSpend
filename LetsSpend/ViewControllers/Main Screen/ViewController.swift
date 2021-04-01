@@ -28,6 +28,7 @@ extension ViewController: UICollectionViewDataSource, UICollectionViewDelegate {
 //        cell.configure(movie: UIImage(named: "car")!)
 //        cell.price.text = "300 000$"
         
+        
         return cell
     }
     
