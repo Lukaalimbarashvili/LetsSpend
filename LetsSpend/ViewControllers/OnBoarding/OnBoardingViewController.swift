@@ -36,7 +36,30 @@ class OnBoardingViewController: UIViewController {
     }
     
     private func handleActionButtonDidTap(at indexPath: IndexPath){
+        if indexPath.item == slides.count - 1{
+            showMainApp()
+        }else{
+            let nextItem = indexPath.item + 1
+            let nextIndexPath = IndexPath(item: nextItem, section: 0)
+            CollectionView.scrollToItem(at: nextIndexPath, at: .top, animated: true)
+        }
+    }
+    
+    private func showMainApp(){
+        let mainAppViewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(identifier: "MainStoryboard")
         
+        if let windowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+           let sceneDelegate = windowScene.delegate as? SceneDelegate,
+           let window = sceneDelegate.window{
+            
+            window.rootViewController = mainAppViewController
+            
+            UIView.transition(with: window,
+                              duration: 0.25,
+                              options: .transitionCrossDissolve,
+                              animations: nil,
+                              completion: nil)
+        }
     }
     
 }
@@ -54,16 +77,25 @@ extension OnBoardingViewController: UICollectionViewDelegate, UICollectionViewDa
         cell.Configure(with: slide)
         
         cell.actionButtonDidTap = { [weak self] in
-            
-            
-            
-            
+            self?.handleActionButtonDidTap(at: indexPath)
         }
         
         return cell
-        
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        
+        let itemWidth = CollectionView.bounds.width
+        let itemHeight = CollectionView.bounds.height
+        
+        
+        return CGSize(width: itemWidth, height: itemHeight)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 0
+    }
     
 }
 
