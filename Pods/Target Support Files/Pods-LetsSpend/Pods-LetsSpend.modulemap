@@ -1,0 +1,6 @@
+framework module Pods_LetsSpend {
+  umbrella header "Pods-LetsSpend-umbrella.h"
+
+  export *
+  module * { export * }
+}

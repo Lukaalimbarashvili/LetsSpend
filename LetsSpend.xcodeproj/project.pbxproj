@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B08E875C39A58F3DFE4FB767 /* Pods_LetsSpend.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD85E9492A10658F9DE015F6 /* Pods_LetsSpend.framework */; };
 		B5330137261664440012A565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5330136261664440012A565 /* AppDelegate.swift */; };
 		B533013B261664440012A565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533013A261664440012A565 /* ViewController.swift */; };
 		B533013E261664440012A565 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B533013C261664440012A565 /* Main.storyboard */; };
@@ -14,12 +15,19 @@
 		B5330143261664440012A565 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B5330141261664440012A565 /* LaunchScreen.storyboard */; };
 		B533015626166B090012A565 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B533015526166B090012A565 /* ItemCell.swift */; };
 		B53D59F82616717A0075402D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B53D59F72616717A0075402D /* SceneDelegate.swift */; };
+		F0033C9926168F9F00C806A7 /* isOrNotNewUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0033C9826168F9F00C806A7 /* isOrNotNewUser.swift */; };
+		F0033CA52616959C00C806A7 /* Amazon.json in Resources */ = {isa = PBXBuildFile; fileRef = F0033CA42616959C00C806A7 /* Amazon.json */; };
 		F02D46EA261677F5009961D4 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F02D46E9261677F5009961D4 /* OnBoarding.storyboard */; };
 		F02D46ED26167827009961D4 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D46EC26167827009961D4 /* OnBoardingViewController.swift */; };
 		F02D46F02616793F009961D4 /* Slides.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02D46EF2616793F009961D4 /* Slides.swift */; };
+		F02D46F726167F2B009961D4 /* GetKnown.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46F626167F2B009961D4 /* GetKnown.json */; };
+		F02D46FA26167F35009961D4 /* Rich.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46F926167F35009961D4 /* Rich.json */; };
+		F02D46FD26167F3F009961D4 /* Spend.json in Resources */ = {isa = PBXBuildFile; fileRef = F02D46FC26167F3F009961D4 /* Spend.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24629C3E95D0887A607CF9FF /* Pods-LetsSpend.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSpend.release.xcconfig"; path = "Target Support Files/Pods-LetsSpend/Pods-LetsSpend.release.xcconfig"; sourceTree = "<group>"; };
+		3637C15B981E8AF9CF6620FD /* Pods-LetsSpend.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LetsSpend.debug.xcconfig"; path = "Target Support Files/Pods-LetsSpend/Pods-LetsSpend.debug.xcconfig"; sourceTree = "<group>"; };
 		B5330133261664440012A565 /* LetsSpend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsSpend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5330136261664440012A565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B533013A261664440012A565 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,9 +37,15 @@
 		B5330144261664440012A565 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B533015526166B090012A565 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		B53D59F72616717A0075402D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F0033C9826168F9F00C806A7 /* isOrNotNewUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = isOrNotNewUser.swift; sourceTree = "<group>"; };
+		F0033CA42616959C00C806A7 /* Amazon.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Amazon.json; path = "../../../../OnBoarding/money/SpendMoney/Spend Money/Assets/Amazon.json"; sourceTree = "<group>"; };
 		F02D46E9261677F5009961D4 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		F02D46EC26167827009961D4 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		F02D46EF2616793F009961D4 /* Slides.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slides.swift; sourceTree = "<group>"; };
+		F02D46F626167F2B009961D4 /* GetKnown.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GetKnown.json; sourceTree = "<group>"; };
+		F02D46F926167F35009961D4 /* Rich.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Rich.json; sourceTree = "<group>"; };
+		F02D46FC26167F3F009961D4 /* Spend.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Spend.json; sourceTree = "<group>"; };
+		FD85E9492A10658F9DE015F6 /* Pods_LetsSpend.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LetsSpend.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,17 +53,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B08E875C39A58F3DFE4FB767 /* Pods_LetsSpend.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1381A1D0951BBA9AD9B4FC56 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3637C15B981E8AF9CF6620FD /* Pods-LetsSpend.debug.xcconfig */,
+				24629C3E95D0887A607CF9FF /* Pods-LetsSpend.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		64F6FC0CB4EFC29597AB7F27 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FD85E9492A10658F9DE015F6 /* Pods_LetsSpend.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B533012A261664440012A565 = {
 			isa = PBXGroup;
 			children = (
 				B5330135261664440012A565 /* LetsSpend */,
 				B5330134261664440012A565 /* Products */,
+				1381A1D0951BBA9AD9B4FC56 /* Pods */,
+				64F6FC0CB4EFC29597AB7F27 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				F02D46EF2616793F009961D4 /* Slides.swift */,
+				F0033C9826168F9F00C806A7 /* isOrNotNewUser.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -97,6 +132,7 @@
 		B533014E2616666D0012A565 /* Recources */ = {
 			isa = PBXGroup;
 			children = (
+				F02D46F226167F13009961D4 /* Assets */,
 				B533013F261664440012A565 /* Assets.xcassets */,
 			);
 			path = Recources;
@@ -143,6 +179,17 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		F02D46F226167F13009961D4 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F0033CA42616959C00C806A7 /* Amazon.json */,
+				F02D46F626167F2B009961D4 /* GetKnown.json */,
+				F02D46F926167F35009961D4 /* Rich.json */,
+				F02D46FC26167F3F009961D4 /* Spend.json */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B5330147261664440012A565 /* Build configuration list for PBXNativeTarget "LetsSpend" */;
 			buildPhases = (
+				12B8E667A1AA70CB90EF5931 /* [CP] Check Pods Manifest.lock */,
 				B533012F261664440012A565 /* Sources */,
 				B5330130261664440012A565 /* Frameworks */,
 				B5330131261664440012A565 /* Resources */,
+				978AF10F47B4D40658DD52C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -200,7 +249,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02D46F726167F2B009961D4 /* GetKnown.json in Resources */,
+				F0033CA52616959C00C806A7 /* Amazon.json in Resources */,
 				B5330143261664440012A565 /* LaunchScreen.storyboard in Resources */,
+				F02D46FA26167F35009961D4 /* Rich.json in Resources */,
+				F02D46FD26167F3F009961D4 /* Spend.json in Resources */,
 				B5330140261664440012A565 /* Assets.xcassets in Resources */,
 				B533013E261664440012A565 /* Main.storyboard in Resources */,
 				F02D46EA261677F5009961D4 /* OnBoarding.storyboard in Resources */,
@@ -208,6 +261,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12B8E667A1AA70CB90EF5931 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LetsSpend-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		978AF10F47B4D40658DD52C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsSpend/Pods-LetsSpend-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LetsSpend/Pods-LetsSpend-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LetsSpend/Pods-LetsSpend-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B533012F261664440012A565 /* Sources */ = {
@@ -218,6 +313,7 @@
 				F02D46F02616793F009961D4 /* Slides.swift in Sources */,
 				B5330137261664440012A565 /* AppDelegate.swift in Sources */,
 				B533015626166B090012A565 /* ItemCell.swift in Sources */,
+				F0033C9926168F9F00C806A7 /* isOrNotNewUser.swift in Sources */,
 				B53D59F82616717A0075402D /* SceneDelegate.swift in Sources */,
 				F02D46ED26167827009961D4 /* OnBoardingViewController.swift in Sources */,
 			);
@@ -363,6 +459,7 @@
 		};
 		B5330148261664440012A565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3637C15B981E8AF9CF6620FD /* Pods-LetsSpend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +479,7 @@
 		};
 		B5330149261664440012A565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24629C3E95D0887A607CF9FF /* Pods-LetsSpend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
